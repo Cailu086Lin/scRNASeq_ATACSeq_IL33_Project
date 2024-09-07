@@ -134,43 +134,43 @@ sub<- RenameIdents(sub, new.cluster.ids)
 
 
 ######v1
-px<-VlnPlot(sub, features = "Il1b",split.by = "type", split.plot=TRUE,y.max=5.5)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px<-VlnPlot(sub, features = "Il1b",split.by = "type", split.plot=TRUE,y.max=5.5)+
   theme(axis.text.x=  element_blank(),axis.title.x = element_blank(), legend.position = "top", legend.justification='center',
         axis.title.y = element_text(size=20), plot.title = element_blank())+labs(y="Il1b") +scale_fill_manual(values=c("#a6cee3", "#b15928"))
 
-px2<-VlnPlot(sub, features = "Il18", split.by = "type",split.plot=TRUE,y.max=3.5)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px2<-VlnPlot(sub, features = "Il18", split.by = "type",split.plot=TRUE,y.max=3.5)+
   theme( axis.text.x=  element_blank(), axis.title.x = element_blank(),
          axis.title.y = element_text(size=20), plot.title = element_blank())+NoLegend()+labs(y="Il18")+scale_fill_manual(values=c("#a6cee3", "#b15928"))
  
 
-px3<-VlnPlot(sub, features = "Il6", split.by = "type",split.plot=TRUE,y.max=4.1)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px3<-VlnPlot(sub, features = "Il6", split.by = "type",split.plot=TRUE,y.max=4.1)+
   theme( axis.text.x=  element_blank(), axis.title.x = element_blank(),
         axis.title.y = element_text(size=20), plot.title = element_blank())+NoLegend()+labs(y="Il6")+scale_fill_manual(values=c("#a6cee3", "#b15928"))
 
 
 
-px4<-VlnPlot(sub, features = "Tnf", split.by = "type",split.plot=TRUE,y.max=4.5)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px4<-VlnPlot(sub, features = "Tnf", split.by = "type",split.plot=TRUE,y.max=4.5)+
   theme(axis.title.x=  element_blank(), axis.text.x = element_text(angle=0, hjust = 0.5),
         axis.title.y = element_text(size=20), plot.title = element_blank())+NoLegend()+labs(y="Tnf")+scale_fill_manual(values=c("#a6cee3", "#b15928"))
 
 
 ##
-px<-VlnPlot(sub, features = "Il1b",split.by = "type", split.plot=TRUE,y.max=5.5)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px<-VlnPlot(sub, features = "Il1b",split.by = "type", split.plot=TRUE,y.max=5.5)+
   theme(axis.text.x=  element_blank(),axis.title.x = element_blank(), legend.position = "top", legend.justification='center',
         axis.title.y = element_text(size=20), plot.title = element_blank())+labs(y="Il1b") +scale_fill_manual(values=c("#f9766e", "#068991"))
 
-px2<-VlnPlot(sub, features = "Il18", split.by = "type",split.plot=TRUE,y.max=3.5)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px2<-VlnPlot(sub, features = "Il18", split.by = "type",split.plot=TRUE,y.max=3.5)+
   theme( axis.text.x=  element_blank(), axis.title.x = element_blank(),
          axis.title.y = element_text(size=20), plot.title = element_blank())+NoLegend()+labs(y="Il18")+scale_fill_manual(values=c("#f9766e", "#068991"))
 
 
-px3<-VlnPlot(sub, features = "Il6", split.by = "type",split.plot=TRUE,y.max=4.1)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px3<-VlnPlot(sub, features = "Il6", split.by = "type",split.plot=TRUE,y.max=4.1)+
   theme( axis.text.x=  element_blank(), axis.title.x = element_blank(),
          axis.title.y = element_text(size=20), plot.title = element_blank())+NoLegend()+labs(y="Il6")+scale_fill_manual(values=c("#f9766e", "#068991"))
 
 
 
-px4<-VlnPlot(sub, features = "Tnf", split.by = "type",split.plot=TRUE,y.max=4.5)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px4<-VlnPlot(sub, features = "Tnf", split.by = "type",split.plot=TRUE,y.max=4.5)+
   theme(axis.title.x=  element_blank(), axis.text.x = element_text(angle=0, hjust = 0.5),
         axis.title.y = element_text(size=20), plot.title = element_blank())+NoLegend()+labs(y="Tnf")+scale_fill_manual(values=c("#f9766e", "#068991"))
 
@@ -185,7 +185,7 @@ ggsave(filename ='Fig_SubsetVln_v2_coloeMatched.tiff',p, width =14, height =24, 
 dev.off()
 
 ##v220221031
-px<-VlnPlot(sub, features = "Tgfb1",split.by = "type", split.plot=TRUE,y.max=4.1)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px<-VlnPlot(sub, features = "Tgfb1",split.by = "type", split.plot=TRUE,y.max=4.1)+
   theme(axis.text.x=  element_blank(),axis.title.x = element_blank(), legend.position = "top", legend.justification='center',
         axis.title.y = element_text(size=20), plot.title = element_blank())+labs(y="Tgfb1") +scale_fill_manual(values=c("#f9766e", "#068991"))
 
@@ -203,7 +203,7 @@ write.csv(stat_results, "suppl.Table_ms/stat_results_Tgfb1.csv", row.names = FAL
 ##stats differed between ggbur and stats, refer to https://github.com/satijalab/seurat/discussions/6811
 ####
 
-px2<-VlnPlot(sub, features = "Ccl2", split.by = "type",split.plot=TRUE,y.max=4.3)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px2<-VlnPlot(sub, features = "Ccl2", split.by = "type",split.plot=TRUE,y.max=4.3)+
   theme( axis.text.x=  element_blank(), axis.title.x = element_blank(),
          axis.title.y = element_text(size=20), plot.title = element_blank())+NoLegend()+labs(y="Ccl2")+scale_fill_manual(values=c("#f9766e", "#068991"))
 
@@ -216,7 +216,7 @@ stat_results <- compare_means(formula = Ccl2 ~ type, data = Ccl2_data, group.by=
 write.csv(stat_results, "suppl.Table_ms/stat_results_Ccl2.csv", row.names = FALSE)
 
 
-px4<-VlnPlot(sub, features = "Ccl9", split.by = "type",split.plot=TRUE,y.max=5)+stat_compare_means(aes(label = sprintf("p = %3.3f", as.numeric(..p.format..))))+
+px4<-VlnPlot(sub, features = "Ccl9", split.by = "type",split.plot=TRUE,y.max=5)+
   theme(axis.title.x=  element_blank(), axis.text.x = element_text(angle=0, hjust = 0.5),
         axis.title.y = element_text(size=20), plot.title = element_blank())+NoLegend()+labs(y="Ccl9")+scale_fill_manual(values=c("#f9766e", "#068991"))
 
