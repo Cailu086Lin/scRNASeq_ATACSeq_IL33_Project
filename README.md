@@ -11,7 +11,7 @@ Abstract
 Skin employs interdependent cellular networks to facilitate barrier integrity and host immunity through ill-defined mechanisms. Herein, we demonstrate that the human pathogen Schistosoma mansoni inhibits pruritus evoked by itch-sensing neurons bearing the Mas-related G protein-coupled receptor A3 (MrgprA3). MrgprA3 neurons control IL-17+ γδ T cell expansion, epidermal hyperplasia and host resistance against S. mansoni through shaping cytokine expression in cutaneous antigen-presenting cells (APC). Activated MrgprA3 neurons downregulate interleukin 33 (IL-33), but up-regulate TNFα in macrophages and cDC2 partially through the neuropeptide calcitonin gene-related peptide (CGRP). Strikingly, stimulation with MrgprA3-derived soluble mediators or myeloid-intrinsic deletion of IL-33 basally increases chromatin accessibility at inflammatory cytokine loci, promoting IL-17/23-dependent changes to the epidermis and resistance to helminth infection. This work uncovers a previously unknown mechanism of intercellular cross-talk wherein “itch” neuron activation reshapes myeloid cytokine expression patterns to alter skin composition for cutaneous immunity against invasive pathogens.
 
 
-# sessionInfo()
+#sessionInfo()
 R version 4.4.1 (2024-06-14)
 Platform: x86_64-pc-linux-gnu
 Running under: Ubuntu 22.04.4 LTS
