@@ -1,6 +1,6 @@
 # scRNASeq_ATACSeq_IL33_Project
 
-Analysis provided in the manuscript titled "MrgprA3 neurons drive cutaneous immunity against helminths through selective control of myeloid-derived IL-33"
+Analysis provided in the manuscript titled "MrgprA3 neurons drive cutaneous immunity against helminths through selective control of myeloid-derived IL-33".
 
 This repository is meant to provide the source code for the analysis of scRNASeq and ATACSeq data provided in the above manuscript by JM Inclan-Rico, CM Napuri, C Lin, LY Hung, AA. Ferguson, Q Wu, CF Pastore, A Stephenson, UM Femoe, F Musaigwa, HL Rossi, DR Reed, T Macháček, P Horák, I Abdus-Saboor, W Luo, and DR. Herbert. The scRNAseq results are deployed @ https://reedlab3.shinyapps.io/IL33_project/
 
